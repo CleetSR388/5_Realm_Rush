@@ -8,7 +8,7 @@ using UnityEngine;
 
 public class CubeEditor : MonoBehaviour {
 
-    [SerializeField] Waypoint startWaypoint, endWaypoint;
+
 
     Waypoint waypoint;
 
@@ -36,7 +36,6 @@ public class CubeEditor : MonoBehaviour {
     private void UpdatesLabel()
     {
         TextMesh textMesh = GetComponentInChildren<TextMesh>();
-        int gridSize = waypoint.GetGridSize();
         string labelText = 
             waypoint.GetGridPos().x  + 
             "," +
